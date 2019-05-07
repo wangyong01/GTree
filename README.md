@@ -1,7 +1,7 @@
 # GTree
 Indexing and Answering Single Pair Shortest Path Query for RoadNetworks
 
-GTree can index directed and undirected graphs, and answering shortest path querying very fast, i.e.,   
+GTree can index directed and undirected graphs, and answering shortest path querying very fast, i.e., several 0.1 ms on very large graph datasets (1~20 million of vertices) from http://users.diag.uniroma1.it/challenge9/download.shtml.
 
 
 Input Graph File: 
