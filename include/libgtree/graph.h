@@ -2,8 +2,8 @@
 // Created by Yong on 2019/4/28.
 //
 
-#ifndef STATICSP_GRAPH_H
-#define STATICSP_GRAPH_H
+#ifndef GTREE_INCLUDE_LIBGTREE_GRAPH_H_
+#define GTREE_INCLUDE_LIBGTREE_GRAPH_H_
 
 #include <iostream>
 #include <fstream>
@@ -11,6 +11,8 @@
 #include <cassert>
 #include "metis.h"
 #include "misc.h"
+
+namespace gtree {
 
 struct Graph {
     unsigned long n, m;
@@ -232,4 +234,7 @@ struct Graph {
     }
 };
 
-#endif //STATICSP_GRAPH_H
+}  // namespace gtree
+
+#endif  // GTREE_INCLUDE_LIBGTREE_GRAPH_H_
+

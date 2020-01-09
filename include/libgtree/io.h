@@ -2,15 +2,17 @@
 // Created by 王勇 on 2018/7/7.
 //
 
-#ifndef GT_IO_H
-#define GT_IO_H
+#ifndef GTREE_INCLUDE_LIBGTREE_IO_H_
+#define GTREE_INCLUDE_LIBGTREE_IO_H_
 
 #include <fstream>
 #include <unordered_map>
-#include "GTree.h"
-#include "Matrix.h"
+#include "gtree.h"
+#include "matrix.h"
 
 using namespace std;
+
+namespace gtree {
 
 template<typename T>
 inline void write_value(std::ofstream &os, const T &value) {
@@ -136,6 +138,7 @@ void read_GTree(GTree &tree) {
     is.close();
 }
 
+}  // namespace gtree
 
+#endif  // GTREE_INCLUDE_LIBGTREE_IO_H_
 
-#endif //GT_IO_H

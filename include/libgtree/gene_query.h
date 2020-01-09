@@ -2,13 +2,15 @@
 // Created by Yong on 2019/5/7.
 //
 
-#ifndef GRAPHTREE_GENE_QUERY_H
-#define GRAPHTREE_GENE_QUERY_H
+#ifndef GTREE_INCLUDE_LIBGTREE_GENE_QUERY_H_
+#define GTREE_INCLUDE_LIBGTREE_GENE_QUERY_H_
 
 #include <string>
 #include <random>
 #include <fstream>
 #include "misc.h"
+
+namespace gtree {
 
 //generate single pair shortest path queries
 void SPSP_Generator(const std::string &inPath = graph_path, const std::string &outPath = query_path) {
@@ -31,4 +33,7 @@ void SPSP_Generator(const std::string &inPath = graph_path, const std::string &o
     out.close();
 }
 
-#endif //GRAPHTREE_GENE_QUERY_H
+}  // namespace gtree
+
+#endif  // GTREE_INCLUDE_LIBGTREE_GENE_QUERY_H_
+

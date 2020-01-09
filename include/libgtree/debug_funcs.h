@@ -2,10 +2,12 @@
 // Created by Yong on 2019/5/7.
 //
 
-#ifndef GRAPHTREE_DEBUG_FUNCS_H
-#define GRAPHTREE_DEBUG_FUNCS_H
+#ifndef GTREE_INCLUDE_LIBGTREE_DEBUG_FUNCS_H_
+#define GTREE_INCLUDE_LIBGTREE_DEBUG_FUNCS_H_
 
-#include <GTree.h>
+#include "gtree.h"
+
+namespace gtree {
 
 void check_matrix(GTree &tree) {
     for (int p = tree.nodes_num; p >= 1; p--) {
@@ -38,4 +40,7 @@ void check_query(GTree &tree, const string &path = query_path) {
     }
 }
 
-#endif //GRAPHTREE_DEBUG_FUNCS_H
+}  // namespace gtree
+
+#endif  // GTREE_INCLUDE_LIBGTREE_DEBUG_FUNCS_H_
+

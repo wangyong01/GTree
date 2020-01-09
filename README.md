@@ -3,8 +3,11 @@ Indexing and Answering Single Pair Shortest Path Query for RoadNetworks
 
 GTree can index directed and undirected graphs, and answering shortest path querying very fast, i.e., several 0.1 ms on very large graph datasets (1~20 million of vertices) from http://users.diag.uniroma1.it/challenge9/download.shtml.
 
+Usage: copy include/libgtree.h, include/libgtree folder into your
+CPLUS_INCLUDE_PATH (on Linux, typically /usr/local/lib). Then simply include
+"libgtree.h" in your own project. See src/ folder for examples.
 
-Input Graph File: 
+Input Graph File:
   First line with n vertices and m edges, following m lines of u v w, i.e., edge from u to v with weight w.
 Example:
 1070376 2712798

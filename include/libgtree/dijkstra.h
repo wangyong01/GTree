@@ -1,15 +1,19 @@
 //
 // Created by Yong on 2019/4/28.
 //
+
+#ifndef GTREE_INCLUDE_LIBGTREE_DIJKSTRA_H_
+#define GTREE_INCLUDE_LIBGTREE_DIJKSTRA_H_
+
 #include <iostream>
 #include <queue>
 #include <vector>
-#include "Graph.h"
+#include "graph.h"
 #include "misc.h"
 
 using namespace std;
-#ifndef STATICSP_DIJKSTRA_H
-#define STATICSP_DIJKSTRA_H
+
+namespace gtree {
 
 long dijkstra(int s, Graph &G, vector<long> &dists) {
     auto cmp = [](std::pair<int, long> left, std::pair<int, long> right) {
@@ -105,4 +109,7 @@ pair<int, long> dijkstra(int s, int t, Graph &G) {
     return make_pair(-1, -1);
 }
 
-#endif //STATICSP_DIJKSTRA_H
+}  // namespace gtree
+
+#endif  // GTREE_INCLUDE_LIBGTREE_DIJKSTRA_H_
+

@@ -2,24 +2,26 @@
 // Created by Yong on 2019/5/6.
 //
 
-#ifndef TDGT_GTREE_H
-#define TDGT_GTREE_H
+#ifndef GTREE_INCLUDE_LIBGTREE_GTREE_H_
+#define GTREE_INCLUDE_LIBGTREE_GTREE_H_
 
-#include <iostream>
-#include <unordered_map>
-#include <queue>
-#include <vector>
 #include <algorithm>
-#include <cmath>
 #include <climits>
+#include <cmath>
 #include <cstring>
+#include <iostream>
 #include <memory>
+#include <queue>
+#include <unordered_map>
+#include <vector>
 
-#include "Dijkstra.h"
-#include "Node.h"
+#include "dijkstra.h"
 #include "misc.h"
+#include "node.h"
 
 using namespace std;
+
+namespace gtree {
 
 struct GTree {
 
@@ -174,7 +176,7 @@ struct GTree {
 
 
     void buildTree() {
-        PRINT_BUILD("Building tree from " + datasets[data_id])
+        PRINT_BUILD("Building tree from " + graph_path)
         clock_t tbegin, tend;
         tbegin = clock();
         build_nodes();
@@ -414,4 +416,7 @@ struct GTree {
     }
 };
 
-#endif //TDGT_GTREE_H
+}  // namespace gtree
+
+#endif  // GTREE_INCLUDE_LIBGTREE_GTREE_H_
+
