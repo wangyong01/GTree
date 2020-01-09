@@ -2,11 +2,13 @@
 // Created by Yong on 2019/5/7.
 //
 
-#ifndef GRAPHTREE_CONSTANTS_H
-#define GRAPHTREE_CONSTANTS_H
+#ifndef GTREE_INCLUDE_LIBGTREE_CONSTANTS_H_
+#define GTREE_INCLUDE_LIBGTREE_CONSTANTS_H_
 
 #include <string>
 #include <vector>
+
+namespace gtree {
 
 // two graph and query demo
 int data_id = 0;
@@ -27,4 +29,7 @@ bool Forest_Speed_Up_Query = true;  //need higher query speed, choose larger ind
 bool VERBOSE = false; //print building process
 unsigned long DISP_FREQ = 100;      // display the building result every 100 nodes.
 
-#endif //GRAPHTREE_CONSTANTS_H
+}  // namespace gtree
+
+#endif  // GTREE_INCLUDE_LIBGTREE_CONSTANTS_H_
+

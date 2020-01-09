@@ -2,11 +2,13 @@
 // Created by Yong on 2019/5/6.
 //
 
-#ifndef TDGT_MATRIX_H
-#define TDGT_MATRIX_H
+#ifndef GTREE_INCLUDE_LIBGTREE_MATRIX_H_
+#define GTREE_INCLUDE_LIBGTREE_MATRIX_H_
 
 #include <memory>
 #include <vector>
+
+namespace gtree {
 
 struct Matrix {
     unsigned long n;  //TMatrix size is n*n
@@ -30,4 +32,7 @@ struct Matrix {
     long *operator[](int x) { return a + x * n; }
 };
 
-#endif //TDGT_MATRIX_H
+}
+
+#endif  // GTREE_INCLUDE_LIBGTREE_MATRIX_H_
+

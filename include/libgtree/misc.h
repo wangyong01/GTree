@@ -2,8 +2,8 @@
 // Created by Yong on 2019/4/25.
 //
 
-#ifndef TDGT_UTILS_H
-#define TDGT_UTILS_H
+#ifndef GTREE_INCLUDE_LIBGTREE_MISC_H_
+#define GTREE_INCLUDE_LIBGTREE_MISC_H_
 
 #include <iostream>
 #include <stack>
@@ -12,6 +12,8 @@
 
 #define PRINT_INFO(info) if(VERBOSE) std::cout<<__TIME__ <<"\t"<< info << "\t" <<std::endl;
 #define PRINT_BUILD(info)  std::cout<<__TIME__ <<"\t"<< info << std::endl;
+
+namespace gtree {
 
 void recover_path_from_prevs(std::ostream &out, int s, int d, std::vector<int> &prevs) {
     assert(prevs.size());
@@ -51,4 +53,7 @@ std::ostream &operator<<(std::ostream &out, std::vector<T> &vec) {
     return out;
 }
 
-#endif //TDGT_UTILS_H
+}  // namespace gtree
+
+#endif  // GTREE_INCLUDE_LIBGTREE_MISC_H_
+

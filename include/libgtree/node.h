@@ -2,20 +2,21 @@
 // Created by Yong on 2019/5/6.
 //
 
-#ifndef TDGT_NODE_H
-#define TDGT_NODE_H
+#ifndef GTREE_INCLUDE_LIBGTREE_NODE_H_
+#define GTREE_INCLUDE_LIBGTREE_NODE_H_
 
 #include <iostream>
 #include <vector>
 #include <unordered_map>
 #include <string>
 #include <algorithm>
-#include "Graph.h"
-#include "Matrix.h"
+#include "graph.h"
+#include "matrix.h"
 #include "misc.h"
 
-
 using namespace std;
+
+namespace gtree {
 
 /**
  *  tree node
@@ -223,4 +224,7 @@ string node2tring(Node &node) {
     return nodeinfo;
 }
 
-#endif //TDGT_NODE_H
+}  // namespace gtree
+
+#endif  // GTREE_INCLUDE_LIBGTREE_NODE_H_
+
